@@ -1,5 +1,3 @@
-//THIS CODE WILL NOT PASS ALL TESTS, WILL FAIL TEST #2
-
 //Input an int between 0 and 100 and print the numbers between it and 100, 
 //including the number itself and the number 100. If the number is not between 0 and 100 print "error". 
 //Print 20 numbers per line.
@@ -24,13 +22,13 @@ class Lesson_24_Activity_Three {
     }
     else{
           
-    	for (i = 0; i < 101; i++){  
+    	for (i = 0; userInput < 101; i++){  
           array[i] = userInput;
       		userInput++;
 
           System.out.print(array[i] + " ");
       
-      		if (i % 20 == 0){
+      		if (i % 20 == 0 && i != 0){
         		System.out.println("");
       }
     }
